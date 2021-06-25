@@ -9,7 +9,7 @@ export default class GetAccountDetails extends LightningElement {
         label: 'Account Name',
             fieldName: 'Name',
             sortable: true
-    },
+    }, 
     {
         label: 'Account Number',
             fieldName: 'AccountNumber',
