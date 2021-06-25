@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-var-m-vertical_large slds-var-p-vertical_medium 
+    slds-text-align_center slds-border_top slds-border_bottom">
+    <lightning-card title="Accounts" icon-name="standard:account">
+        <template if:true={lstAcc}>
+            <lightning-datatable data={lstAcc} columns={columns} key-field="Id"></lightning-datatable>
+        </template>
+        <template if:true={errorAcc}>
+            <p>Error while retrieving accounts!</p>
+            <br>
+            {errorAcc}
+        </template>
+    </lightning-card>
+</div>
+</template>
