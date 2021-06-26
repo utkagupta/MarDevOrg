@@ -12,4 +12,12 @@ public with sharing class getAccountDetailsController {
 
         return lstAcc;
     }
+
+    @AuraEnabled
+    public static List<Account> acctest(){
+        
+        List<account> lstacc = new List<Account>();
+
+        return lstAcc;
+    }
 }
