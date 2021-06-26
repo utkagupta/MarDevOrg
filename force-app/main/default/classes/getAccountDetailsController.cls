@@ -14,10 +14,10 @@ public with sharing class getAccountDetailsController {
     }
 
     @AuraEnabled
-    public static List<Account> acctest(){
+    public static List<Case> acctest(){
         
-        List<account> lstacc = new List<Account>();
+        List<Case> lstCase = [Select id, casenumber from Case];
 
-        return lstAcc;
+        return lstCase;
     }
 }
