@@ -18,7 +18,7 @@ public with sharing class getAccountDetailsController {
         List<Contact> lstcon = new List<Contact>();
          
         lstcon = [Select id, accountId, Department, Name from Contact limit 50];
-        List<Account> lstAcc = [Select id, name from account];
+        List<Account> lstacc = [Select id, name from accoutn limit 10];
         List<Case> lstCase = [Select id, casenumber from Case];
 
         return lstCase;
