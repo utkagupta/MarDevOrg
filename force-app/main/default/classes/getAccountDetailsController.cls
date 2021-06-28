@@ -20,7 +20,7 @@ public with sharing class getAccountDetailsController {
         lstcon = [Select id, accountId, Department, Name from Contact limit 50];
         List<Account> lstacc = [Select id, name from accoutn limit 10];
         List<Case> lstCase = [Select id, casenumber from Case];
-
+        List<Account> lstacc1 = [Select id, name from account where name != null];
         return lstCase;
     }
 }
