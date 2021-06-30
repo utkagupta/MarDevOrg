@@ -17,7 +17,7 @@ public with sharing class getAccountDetailsController {
     public static List<Case> acctest(){
         
         List<Case> lstCase = [Select id, casenumber from Case];
-
+        //comment added to chck deployment.
         return lstCase;
     }
 }
